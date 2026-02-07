@@ -45,7 +45,7 @@
         public async override UniTask BindData()
         {
             await this.userDataManager.LoadUserData();
-            // await this.LoadSceneAsync();
+            await this.LoadSceneAsync();
         }
 
         protected virtual AsyncOperationHandle<SceneInstance> LoadSceneAsync()

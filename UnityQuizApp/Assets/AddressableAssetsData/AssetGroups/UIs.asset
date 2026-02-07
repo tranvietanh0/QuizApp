@@ -15,8 +15,8 @@ MonoBehaviour:
   m_GroupName: UIs
   m_GUID: f267f1a4cad58e14c880dd35af88d54d
   m_SerializeEntries:
-  - m_GUID: e8e8f403f153deb4db24806be9d44f8c
-    m_Address: HomeScreenView
+  - m_GUID: ed34cd6c7d70b524e99fdfb4516bfc64
+    m_Address: CheerScreenView
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
