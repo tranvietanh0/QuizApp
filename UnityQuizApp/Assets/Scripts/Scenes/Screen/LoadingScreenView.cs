@@ -45,6 +45,12 @@
         public async override UniTask BindData()
         {
             await this.userDataManager.LoadUserData();
+        }
+
+        public override async UniTask OpenViewAsync()
+        {
+            await this.BindData();
+            await this.View.Open();
             await this.LoadSceneAsync();
         }
 

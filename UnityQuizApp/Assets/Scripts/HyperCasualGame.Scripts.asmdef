@@ -14,7 +14,9 @@
         "UniT.Extensions",
         "Unity.ResourceManager",
         "GameFoundationCore.AssetLibrary",
-        "Unity.Addressables"
+        "Unity.Addressables",
+        "Unity.TextMeshPro",
+        "UITemplate.LocalData"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
