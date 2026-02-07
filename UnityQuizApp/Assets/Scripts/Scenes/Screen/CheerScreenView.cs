@@ -4,6 +4,8 @@
     using GameFoundationCore.Scripts.Signals;
     using GameFoundationCore.Scripts.UIModule.ScreenFlow.BaseScreen.Presenter;
     using GameFoundationCore.Scripts.UIModule.ScreenFlow.BaseScreen.View;
+    using HyperCasualGame.Scripts.StateMachines.Game;
+    using HyperCasualGame.Scripts.StateMachines.Game.States;
     using TMPro;
     using UniT.Logging;
     using UnityEngine;
@@ -19,10 +21,16 @@
     [ScreenInfo(nameof(CheerScreenView))]
     public class CheerScreenPresenter : BaseScreenPresenter<CheerScreenView>
     {
+        private readonly GameStateMachine gameStateMachine;
+
         public CheerScreenPresenter(
             SignalBus      signalBus,
-            ILoggerManager loggerManager
-        ) : base(signalBus, loggerManager) { }
+            ILoggerManager loggerManager,
+            GameStateMachine gameStateMachine
+        ) : base(signalBus, loggerManager)
+        {
+            this.gameStateMachine = gameStateMachine;
+        }
 
         protected override void OnViewReady()
         {
@@ -36,6 +44,7 @@
         }
         private void OnBtnNextClicked()
         {
+            this.gameStateMachine.TransitionTo<LoginState>();
         }
     }
 }
