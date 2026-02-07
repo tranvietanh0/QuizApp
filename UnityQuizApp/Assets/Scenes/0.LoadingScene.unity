@@ -513,13 +513,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScreenView
       objectReference: {fileID: 0}
+    - target: {fileID: 2729955411799100497, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1725
+      objectReference: {fileID: 0}
     - target: {fileID: 4379432714461673439, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_InitialState
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4379432714461673439, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_DirectorUpdateMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4616774940351559088, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_InitialState
@@ -527,7 +531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4616774940351559088, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_DirectorUpdateMode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4683099677004073493, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_Pivot.x
@@ -608,6 +612,22 @@ PrefabInstance:
     - target: {fileID: 4683099677004073493, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647224292514277648, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647224292514277648, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647224292514277648, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929991107670456113, guid: be33a2ed9aa9a57479b5b16eb710148b, type: 3}
+      propertyPath: m_text
+      value: Quizzo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
