@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet new:*)",
+      "Bash(dotnet --list-sdks:*)",
+      "Bash(dotnet sln:*)",
+      "Bash(dotnet add package:*)",
+      "Bash(dotnet add:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet list:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(sqlcmd:*)",
+      "Bash(dotnet tool list:*)",
+      "Bash(dotnet run:*)",
+      "Bash(sqllocaldb info:*)",
+      "Bash(dotnet remove:*)",
+      "Bash(where:*)",
+      "Bash(sc query:*)",
+      "Bash(tasklist:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}

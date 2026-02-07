@@ -1,0 +1,10 @@
+namespace QuizAppBackend.DTOs.Quiz;
+
+public class QuestionDto
+{
+    public int Id { get; set; }
+    public string QuestionText { get; set; } = string.Empty;
+    public int QuestionOrder { get; set; }
+    public int Points { get; set; }
+    public List<AnswerDto> Answers { get; set; } = new();
+}
