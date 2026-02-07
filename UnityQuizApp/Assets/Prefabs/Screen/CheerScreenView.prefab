@@ -1154,6 +1154,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheerScreenView
       objectReference: {fileID: 0}
+    - target: {fileID: 7450001642730588612, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c25f4db445ac214da2f1e736512072f, type: 2}
+    - target: {fileID: 7450001642730588612, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450001642730588612, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].key
+      value: 
+      objectReference: {fileID: -1626155986624496943, guid: 2c25f4db445ac214da2f1e736512072f, type: 2}
+    - target: {fileID: 7450001642730588612, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 8917652294381623933}
     m_RemovedComponents:
     - {fileID: 60866786328937554, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
     m_RemovedGameObjects: []
@@ -1177,6 +1193,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4679656257880412043, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8434240915674214429}
+    - targetCorrespondingSourceObject: {fileID: 4679656257880412043, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8917652294381623933}
   m_SourcePrefab: {fileID: 100100000, guid: db4671caad8d7684f8068fee30a5e8a8, type: 3}
 --- !u!224 &2397945982787187768 stripped
 RectTransform:
@@ -1220,6 +1239,27 @@ MonoBehaviour:
   viewRoot: {fileID: 0}
   screenTransition: {fileID: 0}
   <BtnNext>k__BackingField: {fileID: 7663929461482198707}
-  <BtnSkip>k__BackingField: {fileID: 6203316202793976205}
   <TxtCheerMessage>k__BackingField: {fileID: 2894398959302861372}
   <TxtTitle>k__BackingField: {fileID: 8507537314220947130}
+--- !u!95 &8917652294381623933
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940376889886411573}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

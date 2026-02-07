@@ -51,6 +51,7 @@
         {
             await this.BindData();
             await this.View.Open();
+            await this.View.Close();
             await this.LoadSceneAsync();
         }
 

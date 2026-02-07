@@ -12,7 +12,6 @@
     public class CheerScreenView : BaseView
     {
         [field: SerializeField] public Button          BtnNext         { get; private set; }
-        [field: SerializeField] public Button          BtnSkip         { get; private set; }
         [field: SerializeField] public TextMeshProUGUI TxtCheerMessage { get; private set; }
         [field: SerializeField] public TextMeshProUGUI TxtTitle        { get; private set; }
     }
@@ -29,16 +28,11 @@
         {
             base.OnViewReady();
             this.View.BtnNext.onClick.AddListener(this.OnBtnNextClicked);
-            this.View.BtnSkip.onClick.AddListener(this.OnBtnSkipClicked);
         }
 
         public override UniTask BindData()
         {
             return UniTask.CompletedTask;
-        }
-        private void OnBtnSkipClicked()
-        {
-
         }
         private void OnBtnNextClicked()
         {
