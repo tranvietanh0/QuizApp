@@ -1,8 +1,10 @@
 ﻿namespace HyperCasualGame.Scripts.StateMachines.Game
 {
     using System.Collections.Generic;
+    using System.Linq;
     using GameFoundationCore.Scripts.DI;
     using GameFoundationCore.Scripts.Signals;
+    using HyperCasualGame.Scripts.StateMachines.Game.Interfaces;
     using HyperCasualGame.Scripts.StateMachines.Game.States;
     using UITemplate.Scripts.Others.StateMachine.Controller;
     using UITemplate.Scripts.Others.StateMachine.Interface;
@@ -11,10 +13,10 @@
     public class GameStateMachine : StateMachine, IInitializable
     {
         public GameStateMachine(
-            List<IState>   listState,
+            List<IGameState>   listState,
             ILoggerManager loggerManager,
             SignalBus      signalBus
-        ) : base(listState, loggerManager, signalBus) { }
+        ) : base(listState.Select(x => x as IState).ToList(), loggerManager, signalBus) { }
 
         public void Initialize()
         {
