@@ -20,7 +20,8 @@
       "Bash(sc query:*)",
       "Bash(tasklist:*)",
       "Bash(find:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(xargs:*)"
     ]
   }
 }
