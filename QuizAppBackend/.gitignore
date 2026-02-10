@@ -1,0 +1,22 @@
+## .NET build output
+[Bb]in/
+[Oo]bj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## VS / Rider
+.vs/
+.idea/
+*.DotSettings.user
+
+## NuGet
+**/packages/*
+!**/packages/build/
+
+## OS files
+[Tt]humbs.db
+.DS_Store

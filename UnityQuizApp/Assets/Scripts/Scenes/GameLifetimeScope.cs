@@ -2,6 +2,8 @@
 {
     using GameFoundationCore.Scripts;
     using GameFoundationCore.Scripts.DI.VContainer;
+    using HyperCasualGame.Scripts.Services;
+    using HyperCasualGame.Scripts.Services.Auth;
     using UITemplate.Scripts;
     using UnityEngine;
     using VContainer;
@@ -13,6 +15,9 @@
         {
             builder.RegisterGameFoundation(this.transform);
             builder.RegisterUITemplate();
+
+            builder.Register<ApiClient>(Lifetime.Singleton);
+            builder.Register<AuthService>(Lifetime.Singleton).As<IAuthService>();
         }
     }
 }

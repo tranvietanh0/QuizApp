@@ -15,6 +15,16 @@ MonoBehaviour:
   m_GroupName: UIs
   m_GUID: f267f1a4cad58e14c880dd35af88d54d
   m_SerializeEntries:
+  - m_GUID: 368ecb5760a231540905654a534432b7
+    m_Address: LoginScreenView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdac07b5cffbf624ca0ad3515267bd4f
+    m_Address: RegisterScreenView
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ed34cd6c7d70b524e99fdfb4516bfc64
     m_Address: CheerScreenView
     m_ReadOnly: 0

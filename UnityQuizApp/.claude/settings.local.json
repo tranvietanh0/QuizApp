@@ -21,7 +21,8 @@
       "Bash(tasklist:*)",
       "Bash(find:*)",
       "Bash(curl:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash(git rm:*)"
     ]
   }
 }
