@@ -2,6 +2,6 @@ namespace HyperCasualGame.Scripts.Services
 {
     public static class ApiConfig
     {
-        public const string BaseUrl = "http://localhost:5000/api";
+        public const string BaseUrl = "http://localhost:5210/api";
     }
 }
