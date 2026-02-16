@@ -5,6 +5,7 @@
     using GameFoundationCore.Scripts.Signals;
     using GameFoundationCore.Scripts.UIModule.ScreenFlow.BaseScreen.Presenter;
     using GameFoundationCore.Scripts.UIModule.ScreenFlow.BaseScreen.View;
+    using HyperCasualGame.Scripts.Models.Controller;
     using HyperCasualGame.Scripts.Services.Auth;
     using HyperCasualGame.Scripts.StateMachines.Game;
     using HyperCasualGame.Scripts.StateMachines.Game.States;
@@ -28,18 +29,21 @@
     {
         #region Inject
 
-        private readonly GameStateMachine gameStateMachine;
-        private readonly IAuthService     authService;
+        private readonly GameStateMachine       gameStateMachine;
+        private readonly IAuthService           authService;
+        private readonly AppLocalDataController appLocalDataController;
 
         public RegisterScreenPresenter(
-            SignalBus        signalBus,
-            ILoggerManager   loggerManager,
-            GameStateMachine gameStateMachine,
-            IAuthService     authService
+            SignalBus              signalBus,
+            ILoggerManager         loggerManager,
+            GameStateMachine       gameStateMachine,
+            IAuthService           authService,
+            AppLocalDataController appLocalDataController
         ) : base(signalBus, loggerManager)
         {
-            this.gameStateMachine = gameStateMachine;
-            this.authService      = authService;
+            this.gameStateMachine       = gameStateMachine;
+            this.authService            = authService;
+            this.appLocalDataController = appLocalDataController;
         }
 
         #endregion
@@ -63,15 +67,28 @@
 
         private async UniTaskVoid RegisterAsync()
         {
+            #if UNITY_EDITOR
+            if (!this.CheckValidInput()) return;
+            var email    = this.View.InputEmail.text.Trim();
+            var userName = this.View.InputAccount.text.Trim();
+            var password = this.View.InputPassword.text.Trim();
+
+            if (this.appLocalDataController.CheckAccountDemo(userName))
+            {
+                //Show Popup have this account
+                return;
+            }
+            this.appLocalDataController.AddAccountDemo(email, userName, password);
+            #else
             if (!this.CheckValidInput()) return;
 
             this.View.BtnRegister.interactable = false;
 
             var request = new RegisterRequest
             {
-                Username    = this.View.InputAccount.text.Trim(),
-                Email       = this.View.InputEmail.text.Trim(),
-                Password    = this.View.InputPassword.text,
+                Username = this.View.InputAccount.text.Trim(),
+                Email = this.View.InputEmail.text.Trim(),
+                Password = this.View.InputPassword.text,
                 DisplayName = this.View.InputAccount.text.Trim(),
             };
 
@@ -88,6 +105,7 @@
             {
                 Debug.LogWarning($"[Register] Failed: {result.ErrorMessage}");
             }
+            #endif
         }
 
         private void OnClickBack()

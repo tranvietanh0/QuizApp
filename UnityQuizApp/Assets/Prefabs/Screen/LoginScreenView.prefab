@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter your password
+  m_text: ' Enter your password'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4154efafd83347047be695ba4a56f83e, type: 2}
   m_sharedMaterial: {fileID: -369250897078074286, guid: 4154efafd83347047be695ba4a56f83e, type: 2}
@@ -1178,8 +1178,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 48.4
+  m_fontSizeBase: 48.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2206,6 +2206,8 @@ MonoBehaviour:
   <ForgotPasswordBtn>k__BackingField: {fileID: 2505027149620288918}
   <LoginBtn>k__BackingField: {fileID: 4023358400190389333}
   <RegisterBtn>k__BackingField: {fileID: 4913380610410636766}
+  <EmailInput>k__BackingField: {fileID: 0}
+  <PasswordInput>k__BackingField: {fileID: 0}
 --- !u!1001 &2358348413308914347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2297,6 +2299,18 @@ PrefabInstance:
     - target: {fileID: 3704360566699397298, guid: 548e6100d825bdd498df5f5c0b83e868, type: 3}
       propertyPath: m_Name
       value: EmailField
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066327672686334211, guid: 548e6100d825bdd498df5f5c0b83e868, type: 3}
+      propertyPath: m_text
+      value: ' Enter your email '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066327672686334211, guid: 548e6100d825bdd498df5f5c0b83e868, type: 3}
+      propertyPath: m_fontSize
+      value: 48.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066327672686334211, guid: 548e6100d825bdd498df5f5c0b83e868, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
